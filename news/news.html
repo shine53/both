@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="news">
+<head>
+    <meta charset="UTF-8">
+    <title>易天气--让天气有价值，让生活更美好！</title>
+    <link rel="shortcut icon" href="../favicon.ico"/>
+    <link rel="bookmark" href="../favicon.ico"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" type="text/css" href="../css/animate.css">
+    
+</head>
+<body class="news-page">
+<div class="header" style="background: #4b4b4b!important">
+<a class="elogo">
+    <img src="../images/elogo.png">
+</a>
+<ul id="menu">
+    <li ><a href="../#home">使命</a></li>
+    <li ><a href="../#weather">气象+</a></li>
+    <li ><a href="../#About">我们</a></li>
+    <li ><a href="../dynamic.html">动态</a></li>
+</ul>
+</div>
+<article class="news-box">
+    <h2 class="title">${news.title}
+        <div id="qrcode" align="center"></div>
+    </h2>
+    <div class="news-info">
+        <span>发布人：<b class="author">${news.writer}</b></span>
+        <span>发布时间：<b class="timer">${news.createTime}</b></span>
+    </div>
+    <div class="news-content">
+        ${news.content}
+    </div>
+</article>
+
+
+
+
+
+
+
+<script src="../js/jquery/3.2.1/jquery.min.js"></script>
+<script src="../js/jquery.qrcode.min.js"></script>
+<script>
+    $(function () {
+        $('#qrcode').qrcode({ width: 80, height: 80, text: decodeURIComponent(window.location.href) });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+  <title>易天气--让天气有价值，让生活更美好！</title>
+  <link rel="shortcut icon" href="favicon.ico"/>
+  <link rel="bookmark" href="favicon.ico"/>
+  <link rel="stylesheet" href="font/iconfont.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="js/fullpage/jquery.fullpage.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.css" />
+  <link media="screen and (min-width:320px) and (max-width:768px)" rel="stylesheet" href="css/m_base.css">
+	<link media="screen and (min-width:320px) and (max-width:768px)" rel="stylesheet" href="css/m_header.css">
+  
+</head>
+<body class="news-page">
+<div class="header" style="background: #4b4b4b!important">
+<a class="elogo">
+  <img src="images/elogo.png">
+</a>
+<a class="btn-container" href="javascript:;">
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+  <span class="icon-bar"></span>
+</a>
+<ul id="menu">
+  <li class="active"><a href="../#home">使命</a></li>
+    <li><a href="../#weather">气象+</a></li>
+    <li><a href="job.html">我们</a></li>
+    <li><a href="dynamic.html">动态</a></li>
+</ul>
+</div>
+
+
+<div class="content">
+  <div class="job-box">
+    
+  </div>
+</div>
+
+
+
+<script type="text/javascript" src="js/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/common.js"></script>
+
+<script type="text/javascript">
+  $(function(){
+    $.getJSON('data/job.json', function(json, textStatus) {
+
+        //$('.job-box').html();
+        for (var i = 0; i < json.length; i++) {
+          if(i%2 == 0 ){
+            $('.job-box').append('<div class=row></div>');
+          }
+
+            $('.job-box .row').last().append('<div class="job-info">'+
+              '<h4 class="job-title"><span>'+json[i].money+'</span>'+json[i].title+'</h4>'+
+              '<div class="job-detail">'+
+              '<span>工作地点：'+json[i].place+'</span><span>招聘人数：'+json[i].number+'</span>'+
+              '<div class="job-other"><b>任职要求</b>'+json[i].info+'</div>'+
+              '</div>'+
+              '<a class=job-apply href="'+json[i].link+'" target="_blank">查看详情</a>'+
+             '</div>');
+        }
+    });
+  })
+</script>
+</body>
+</html>

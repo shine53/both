@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" class="home">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <title>易天气--让天气有价值，让生活更美好！</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="bookmark" href="favicon.ico"/>
+    <link rel="stylesheet" href="font/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="js/fullpage/jquery.fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    
+</head>
+<body>
+<div class="header">
+    <a class="elogo">
+        <img src="images/elogo.png">
+    </a>
+    <ul id="menu">
+        <li data-menuanchor="home" class="active"><a href="#home">使命</a></li>
+        <li data-menuanchor="weather"><a href="#weather">气象+</a></li>
+        <li data-menuanchor="About"><a href="job.html">我们</a></li>
+        <li ><a href="dynamic.html">动态</a></li>
+    </ul>
+</div>
+
+<div id="fullpage">
+    <div class="section active" id="section0">
+        <div class="slide active" id="slide1">
+            <div class="intro">
+                <img src="images/eInfo.svg" width="70%">
+            </div>
+        </div>
+        <div class="slide" id="slide2">
+            <div class="intro">
+                <h4>使城市和人居包容、安全、有弹性、可持续。</h4>
+            </div>
+        </div>
+        <div class="slide" id="slide3">
+            <div class="intro">
+                <h4>AI-WEATHER 基于影响的智能临近预报</h4>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="section1">
+                <div class="second-info animated">
+                    <h5>核心能力</h5>
+                    <div class="jianjie">
+                        易天气依托涵盖多源数据的大数据平台、提供多行业算法服务的算法工厂、人工智能高影响天气临近预报系统、超高分辨率气象和环境预警预报系统（UMEPS）、二维/三维可视化交互平台等核心能力，形成有效的行业解决方案。
+                    </div>
+                </div>
+                <div class="second-content animated">
+                        <ul class="second-box ">
+                            <li data-info="d1">
+                                <i class="iconfont">&#xe612;</i>
+                                <div>大数据平台</div>
+                            </li>
+                            <li data-info="d2">
+                                <i class="iconfont">&#xe604;</i>
+                                <div>算法工厂</div>
+                            </li>
+                            <li data-info="d3">
+                                <i class="iconfont">&#xe63f;</i>
+                                <div>智能天气</div>
+                            </li>
+                            <li data-info="d4">
+                                <i class="iconfont">&#xe614;</i>
+                                <div>预警预报</div>
+                            </li>
+                            <li data-info="d5">
+                                <i class="iconfont">&#xe881;</i>
+                                <div>可视化平台</div>
+                            </li>
+                        </ul>
+                </div>
+                <div class="detail-box animated">
+                    <h4 class="close-detail-box">
+                        <strong class="detail-title"></strong>
+                        <span>X</span>
+                    </h4>
+                    <div class="detail-content"></div>
+                </div>
+    </div>
+
+    <div class="section" id="section2">
+        <div class="intro">
+            <h4>解决方案</h4>
+            <ul class="box ">
+                <li class="">
+                    <div class="iconbg animated"><i class="icon iconfont">&#xe63d;</i></div>
+                    <div>气象</div>
+                </li>
+                <li class="">
+                    <div class="iconbg animated"><i class="icon iconfont">&#xe687;</i></div>
+                    <div>规划</div>
+                </li>
+                <li class="">
+                    <div class="iconbg animated"><i class="icon iconfont">&#xe602;</i></div>
+                    <div>航空</div>
+                </li>
+                <li class="">
+                    <div class="iconbg animated"><i class="icon iconfont">&#xe60e;</i></div>
+                    <div>交通</div>
+                </li>
+                <li class="">
+                    <div class="iconbg animated"><i class="icon iconfont">&#xe6c8;</i></div>
+                    <div>环保</div>
+                </li>
+                <li class="">
+                    <div class="iconbg animated"><i class="icon iconfont">&#xe665;</i></div>
+                    <div>能源</div>
+                </li>
+                <li class="">
+                    <div class="iconbg animated"><i class="icon iconfont">&#xe606;</i></div>
+                    <div>农业</div>
+                </li>
+                <li class="">
+                    <div class="iconbg animated"><i class="icon iconfont">&#xe62b;</i></div>
+                    <div>海洋</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section" id="section3">
+        <div class="show">
+            <h4>公司动态</h4>
+            <ul class="show-list"></ul>
+        </div>
+    </div>
+    <div class="section" id="section4">
+        <div class="intro">
+            <h4>诚招英才</h4>
+            <ul class="job"></ul>
+        </div>
+    </div>
+
+    <div class="section" id="section5">
+        <div class="intro">
+            <h4>联系我们</h4>
+            <div class="link-box">
+                <i class="icon iconfont">&#xe605;</i>
+                <span>北京朝阳区北辰东路8号院北辰时代大厦18层</span>
+            </div>
+            <div class="link-box">
+                <i class="icon iconfont">&#xe647;</i>
+                <span>电话（8610）82430888</span>
+                <span>传真（8610）82430999</span>
+            </div>
+            <div class="link-box">
+                <img src="images/qr.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <script type="text/javascript" src="js/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/fullpage/jquery.fullpage.js"></script>
+    <!-- <script type="text/javascript" src="js/dynamic.js"></script> -->
+    <script>
+
+function ecoAnim(id,name){
+    $('.'+id).removeClass(name).addClass(name).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+      $(this).removeClass(name);
+    });
+}
+
+    $(function() {
+        $('.second-content').hide();
+        $('.second-info').hide();
+        $('#fullpage').fullpage({
+        anchors: ['home','weather', 'scheme','news','job','About'],
+        navigation:true,
+        navigationTooltips: ['使命', '气象+', '解决方案','公司动态','招贤纳士','联系我们'],
+        slidesNavigation: true,
+        scrollingSpeed: 1000,
+        lazyLoad: true,
+        afterLoad:function(anchorLink,index){
+            switch (index) {
+                case 1:
+                    break;
+                case 2:
+                    $('.second-info').toggle();
+                    $('.second-content').toggle();
+                    ecoAnim('second-info','bounceInDown');
+                    ecoAnim('second-content','bounceInRight');
+                    break;
+                case 3:
+                    
+                    //ecoAnim('box','flipInX');
+                    break;
+                case 4:
+                    console.log('444')
+                    break;
+                default:
+                    // statements_def
+                    break;
+            }
+        },
+        onLeave:function(index, nextIndex, direction){
+            switch (index) {
+                case 1:
+                    // statements_1
+                    break;
+                case 2:
+                    $('.second-info').toggle();
+                    $('.second-content').toggle();
+                    $('.detail-box').hide();
+                    break;
+                case 3:
+                    // statements_1
+                    break;
+                case 4:
+                    // statements_1
+                    break;
+                default:
+                    // statements_def
+                    break;
+            }
+
+        }
+        });
+
+
+        
+        $('.box li').hover(function() {
+            $(this).children('.iconbg').addClass('heartBeat');
+        }, function() {
+            $(this).children('.iconbg').removeClass('heartBeat');
+        });
+
+ var powerData;
+$.getJSON('data/power.json', function(json, textStatus) {
+        powerData = json;
+        return powerData;
+});
+
+
+        $('.second-box').children('li').on('click',function(){
+            $num = $(this).attr('data-info');
+           $.each(powerData,function(index, el) {
+               if($num == el.id){
+                $('.detail-title').html(el.title)
+                $('.detail-content').html(el.txt);
+               }
+               
+           });
+
+            $('.detail-box').animate({width:"60%",height:"45%"}, 1000).show();
+        });
+
+        $('.close-detail-box').on('click',function(){
+            var $this = $(this).parent('div.detail-box');
+            $this.animate({width:"0%",height:"0%"},function(){
+                $this.hide();
+            });
+        })
+
+        var jobData = null;
+        var $job = $('.job');
+        $.getJSON('data/job.json', function(json, textStatus) {
+            jobData = json;
+            jobData = jobData.slice(0,6);
+            jobData.forEach(function(item) {
+                var jobStr = '';
+                jobStr += '<li><ul class="job-show float clearfix"><li class="br">'+item.title+'</li><li>'+item.place+'</li><li class="br">'+item.money+'</li><li class="more"><a href="'+item.link+'" class="btn-link">查看详情</a></li></ul></li>';
+                $job.append(jobStr);
+            })
+            return jobData;
+        });
+
+        var url = 'http://182.92.68.193/findNews'
+        //var url = '/findNews';
+        var dynamicData = null;
+        $.ajax({
+            url:url,
+            data : {},
+            type : 'get',
+            dataType: 'json',
+            success:function(data){
+                console.log(data);
+                dynamicData = data;
+                dynamicData = data.slice(0,4);
+                var $showList = $('.show-list');
+                var nowTime = new Date();
+                // 利用毫秒
+                var nowNum = new Date().getTime(); 
+                console.log(nowNum);
+                
+                
+                dynamicData.forEach(item => {
+                    var showStr = '';
+                    var itemStr = item.createTime.replace(/-/ig,'/');
+                    // console.log(itemStr);
+                    
+                    var itemNum =  new Date(itemStr).getTime();
+                    // console.log(item.createTime + '----' +itemNum);
+                    var newTime = nowNum - itemNum;
+                    console.log(newTime);
+                    if (newTime <= (7*24*60*60*1000)) {
+                        // console.log(item.createTime+'小于7天');
+                        showStr += '<li><a href="dynamic.html"><h6>公司新闻</h6><img src="images/new.gif"/><div class="show-inner"><h5>'+item.title+'</h5><p>发布人：'+item.writer+'</p><p>'+item.createTime+'</p></div></a></li>';
+                        
+                    } else {
+                        showStr += '<li><a href="dynamic.html"><h6>公司新闻</h6><div class="show-inner"><h5>'+item.title+'</h5><p>发布人：'+item.writer+'</p><p>'+item.createTime+'</p></div></a></li>';
+                    }
+                    $showList.append(showStr);
+                });
+            },
+            error:function(){
+                console.log('');
+            }
+        });
+    });
+    
+</script>
+
+</body>
+</html>

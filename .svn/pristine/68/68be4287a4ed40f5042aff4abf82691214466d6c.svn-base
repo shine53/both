@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-wekit-box-sizing: border-box;
+	/* 有事件监听的元素被点击的时候会被高亮显示 */
+	/* 对 webkit 内核有效 */
+	-webkit-tap-highlight-color: transparent;
+}
+body {
+	font-size: 14px;
+	font-family: "Microsoft YaHei", sans-serif;
+	color: #666;
+	background: pink;
+}
+ul,ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #666;
+}
+input,textarea {
+	border: none;
+	outline: none;
+	resize: none;
+	-wekit-appearence: none;
+}
+
+/* common */
+.del {
+	text-decoration: line-through;
+}
+.f_left { float: left;}
+.f_right { float: right;}
+.clearFix:after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}
+.m_l_10 { margin-left: 10px; }
+.m_r_10 { margin-right: 10px; }
+.m_t_10 { margin-top: 10px; }
+.m_b_10 { margin-bottom: 10px; }
+
+.br { border-right: 1px solid #ddd;}
+.bl { border-left: 1px solid #ddd;}
+.bb {border-bottom: 1px solid #ddd;}
+
+[class^='icon_'],
+[class*='icon_'] {
+	background-image: url(../images/sprites.png);
+	background-repeat: no-repeat;
+	background-size: 200px;
+}

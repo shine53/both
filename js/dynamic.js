@@ -1,0 +1,74 @@
+﻿
+ function systole() {
+    if (!$(".history").length) {
+      return;
+    }
+    var $warpEle = $(".history-date"),
+      $targetA = $warpEle.find("h2 a,ul li dl dt a"),
+      parentH,
+      eleTop = [];
+    parentH = $warpEle.parent().height()+133;
+    $warpEle.parent().css({
+      "height":59
+    });
+    setTimeout(function () {
+
+      $warpEle.find("ul").children(":not('h2:first')").each(function (idx) {
+        eleTop.push($(this).position().top);
+        $(this).css({
+          "margin-top":-eleTop[idx]
+        }).children().hide();
+      }).animate({
+          "margin-top":0
+        }, 1600).children().fadeIn();
+      $warpEle.parent().animate({
+        "height":parentH
+      }, 2600);
+
+      $warpEle.find("ul").children(":not('h2:first')").addClass("bounceInDown").css({
+        "-webkit-animation-duration":"2s",
+        "-webkit-animation-delay":"0",
+        "-webkit-animation-timing-function":"ease",
+        "-webkit-animation-fill-mode":"both"
+      }).end().children("h2").css({
+          "position":"relative"
+        });
+    }, 600);
+
+    $targetA.click(function () {
+      $(this).parent().css({
+        "position":"relative"
+      });
+      $(this).parent().siblings().slideToggle();
+      $warpEle.parent().removeAttr("style");
+    });
+
+  }
+  var data = [];
+function createTable(data){
+  len = data.length;
+  $('#news').html('');
+  $('<div class=history-date><ul><h2 class="first"><a href="#nogo">2019</a></h2></ul></div>').appendTo('#news')
+  for(var i = 0 ; i < len; i++){
+   
+      var time = data[i].createTime.substring(0,10);
+      $('<li><h3>'+time+'</h3><dl><dt><a href="news/news'+data[i].id+'.html">'+data[i].title+'<span>发布人：'+data[i].writer+'</span></a></dt></dl></li>').appendTo('.history-date ul')
+  };
+   
+}
+
+    var url = 'http://182.92.68.193/findNews'
+	//var url = '/findNews';
+    $.ajax({
+    url:url,
+    data : {},
+    type : 'get',
+    dataType: 'json',
+    success:function(data){
+      createTable(data);
+      systole();
+    },
+    error:function(){
+      console.log('');
+    }
+  });

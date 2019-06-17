@@ -1,0 +1,37 @@
+.elogo {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 100px;
+	margin-top: 0;
+	padding-top: 15px;
+}
+.btn-container {
+	display: block;
+	width: 80px;
+	height: 100%;
+	padding: 15px;
+	visibility: visible;
+}
+.btn-container .icon-bar {
+	display: block;
+	width: 30px;
+	height: 2px;
+	background-color: #fff;
+	margin: 8px;
+}
+#menu {
+	display: none;
+	float: left;
+	margin-top: 60px;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: left;
+}
+
+#menu li {
+	display: block;
+	padding: 10px 0;
+    margin: 0;
+    color: #000;
+}

@@ -1,0 +1,129 @@
+
+.elogo {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 100px;
+	margin-top: 0;
+	padding-top: .3rem;
+}
+.btn-container {
+	display: block;
+	width: 1.5rem;
+	height: 100%;
+	padding: 15px;
+}
+.nav-toggle {
+	background: rgba(0,0,0,0);
+	border: 1px solid #fff;
+	width: .8rem;
+	height: 30px;
+	outline: none;
+	cursor: pointer;
+	text-align: center;
+	visibility: visible;
+}
+.nav-toggle .icon-bar {
+	display: block;
+	width: .5rem;
+	height: 1px;
+	background-color: #fff;
+	margin: .1rem;
+}
+#menu {
+	display: none;
+	float: left;
+	margin-top: 60px;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: left;
+}
+
+#menu li {
+	display: block;
+	padding: 10px 0;
+    margin: 0;
+    color: #000;
+}
+
+.intro h4 {
+	font-size: 14px;
+}
+.second-info {
+	left: 0;
+	padding: 0 10px;
+}
+.fp-controlArrow.fp-next {
+    right: 36px; 
+	border-width: 20.5px 0 20.5px 25px;
+}
+.fp-controlArrow.fp-prev {
+    left: 36px;
+    border-width: 20.5px 25px 20.5px 0;
+}
+.fp-controlArrow {
+	margin-top: -20.5px;
+}
+.jianjie {
+	width: auto;
+	font-size: 16px;
+}
+
+.second-content {
+    width: 100%;
+    top: 60%;
+    height: 120px;
+}
+.second-content::before {
+	visibility: hidden;
+}
+.second-box li i {
+    font-size: .6rem;
+}
+.second-box li div {
+    font-size: 12px;
+}
+
+.detail-box h4 {
+	font-size: .6rem;
+    line-height: .8rem;
+    border-bottom: 1px #5d87b38f solid;
+}
+.detail-box h4 span {
+    float: right;
+    font-size: 0.5rem;
+    margin-right: 1em;
+    cursor: pointer;
+}
+.show h4,
+.intro h4 {
+	padding: .3rem 0;
+	font-size: .6rem;
+}
+#section3 {
+    padding-top: 40px;
+}
+.show-list {
+	width: 100%;
+	padding: 0 .5rem;
+	font-size: 14px;
+}
+.show-list li {
+    width: 50%;
+    min-height: 4.8rem;
+    padding: .2rem;
+}
+.link-box {
+	height: 120px;
+	padding: 8px 10px;
+    line-height: 24px;
+}
+.link-box i {
+	/* display: none; */
+	width: 100%;
+	font-size: 2em;
+}
+.link-box span {
+	display: block;
+	margin: 15px 0;
+}

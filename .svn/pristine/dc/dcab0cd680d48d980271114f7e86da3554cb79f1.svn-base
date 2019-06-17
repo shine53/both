@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>易天气--让天气有价值，让生活更美好！</title>
+  <link rel="shortcut icon" href="favicon.ico"/>
+  <link rel="bookmark" href="favicon.ico"/>
+  <link rel="stylesheet" href="font/iconfont.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="js/fullpage/jquery.fullpage.css" />
+  <link rel="stylesheet" type="text/css" href="css/animate.css" />
+  <link rel="stylesheet" type="text/css" href="css/dynamic.css" />
+  
+</head>
+<body class="news-page">
+<div class="header" style="background: #4b4b4b!important">
+<a class="elogo">
+  <img src="images/elogo.png">
+</a>
+<ul id="menu">
+  <li class="active"><a href="/#home">使命</a></li>
+    <li><a href="/#weather">气象+</a></li>
+    <li><a href="job.html">我们</a></li>
+    <li><a href="dynamic.html">动态</a></li>
+</ul>
+</div>
+
+
+<div  class="main">
+  <div class="history" id="news">
+    
+  </div>
+</div>
+
+<script type="text/javascript" src="js/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/dynamic.js"></script>
+
+</body>
+</html>

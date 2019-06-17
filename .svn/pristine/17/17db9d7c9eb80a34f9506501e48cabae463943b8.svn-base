@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+    <link rel="stylesheet" href="js/wangEditor/wangEditor-fullscreen-plugin.css">
+</head>
+<body>
+
+内容
+<div id="content">
+    
+    <div class="title"></div>
+    <div>
+        <span>发布人：<b class="author"></b></span>
+        <span>发布时间：<b class="timer"></b></span>
+    </div>
+    <div class="neswContent"></div>
+</div>
+
+
+
+    <div id="qrcode" style="margin-bottom:15px;" align="center"></div>
+
+
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+   <script src="js/jquery.qrcode.min.js"></script>
+
+
+    <script>
+        $(function () {
+          $.ajax({
+              url: '/path/to/file',
+              type: 'default GET (Other values: POST)',
+              dataType: 'default: Intelligent Guess (Other values: xml, json, script, or html)',
+              data: {param1: 'value1'},
+          })
+          .done(function() {
+              console.log("success");
+          })
+          .fail(function() {
+              console.log("error");
+          })
+          .always(function() {
+              console.log("complete");
+          });
+
+             $('#qrcode').qrcode({ width: 200, height: 200, text: decodeURIComponent(window.location.href) });
+        });
+    </script>
+</body>
+</html>
